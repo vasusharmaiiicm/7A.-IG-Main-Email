@@ -1,0 +1,458 @@
+2025-09-10 17:02:43.271239+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-10 17:02:43.273341+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-10 17:02:43.273340+0000 UTC'
+2025-09-10 17:02:43.276262+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-10 17:02:43.277207+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to '2021-1-1'
+2025-09-10 17:02:43.277207+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 4.7 years.
+2025-09-10 17:02:43.280523+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to '2021-1-1' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-10 17:02:43.282390+0000 UTC [INFO] pydataquery: Execution started
+2025-09-10 17:02:43.282390+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='2021-1-1', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-10 17:02:43.293272+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 4 year(s) 252 day(s): start_date=20210101, end_date=20250909
+2025-09-10 17:02:43.293272+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-10 17:02:43.293272+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&start-date=20230910&end-date=20250909&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-10 17:02:43.293272+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-10 17:02:43.652571+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.37 seconds. The token expires_at=2025-09-10 19:02:42+0000 UTC
+2025-09-10 17:02:43.668281+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-10 19:02:42+0000 UTC
+2025-09-10 17:02:46.028236+0000 UTC [INFO] pydataquery: Received API response in 2.193306 seconds with response code 200
+2025-09-10 17:02:46.028236+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-10 17:02:46.028236+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&start-date=20210910&end-date=20230909&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-10 17:02:46.028236+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-10 19:02:42+0000 UTC
+2025-09-10 17:02:48.175980+0000 UTC [INFO] pydataquery: Received API response in 1.970355 seconds with response code 200
+2025-09-10 17:02:48.179996+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-10 17:02:48.180994+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&start-date=20210101&end-date=20210909&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-10 17:02:48.182787+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-10 19:02:42+0000 UTC
+2025-09-10 17:02:50.131462+0000 UTC [INFO] pydataquery: Received API response in 1.896334 seconds with response code 200
+2025-09-10 17:02:50.134462+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-10 17:02:50.135461+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-10 17:02:50.141315+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-10 17:02:50.148510+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-10 17:02:50.149516+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-10 17:02:50.153660+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-10 17:02:50.155462+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,712 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='2021-1-1' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 13:28:56.522320+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 13:28:56.524395+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 13:28:56.524394+0000 UTC'
+2025-09-12 13:28:56.526420+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 13:28:56.526420+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-1Y'. Date range: 364 day(s).
+2025-09-12 13:28:56.526420+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-1Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 13:28:56.528991+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 13:28:56.528991+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-1Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 13:28:56.528991+0000 UTC [INFO] pydataquery: Prepared 1 API requests for 3 expressions of 0 year(s) 364 day(s): start_date=20240911, end_date=20250911
+2025-09-12 13:28:56.528991+0000 UTC [INFO] pydataquery: Sending 1/1 API request
+2025-09-12 13:28:56.528991+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20240911&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:28:56.528991+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 13:28:56.927062+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.39 seconds. The token expires_at=2025-09-12 15:28:55+0000 UTC
+2025-09-12 13:28:56.927062+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:28:55+0000 UTC
+2025-09-12 13:28:58.489065+0000 UTC [INFO] pydataquery: Received API response in 1.512077 seconds with response code 200
+2025-09-12 13:28:58.505112+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 13:28:58.507254+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 13:28:58.510460+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 13:28:58.511189+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 13:28:58.511189+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 13:28:58.511189+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 13:28:58.519377+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 364 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-1Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 13:32:12.823795+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 13:32:12.825827+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 13:32:12.824811+0000 UTC'
+2025-09-12 13:32:12.826484+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 13:32:12.826484+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-3Y'
+2025-09-12 13:32:12.826484+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 3.0 years.
+2025-09-12 13:32:12.829961+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-3Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 13:32:12.831250+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 13:32:12.832270+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-3Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 13:32:12.833271+0000 UTC [INFO] pydataquery: Prepared 2 API requests for 3 expressions of 3 year(s) 0 day(s): start_date=20220911, end_date=20250911
+2025-09-12 13:32:12.833271+0000 UTC [INFO] pydataquery: Sending 1/2 API request
+2025-09-12 13:32:12.834419+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230912&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:32:12.834419+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 13:32:13.462752+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.63 seconds. The token expires_at=2025-09-12 15:32:12+0000 UTC
+2025-09-12 13:32:13.463744+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:32:12+0000 UTC
+2025-09-12 13:32:15.641936+0000 UTC [INFO] pydataquery: Received API response in 2.07603 seconds with response code 200
+2025-09-12 13:32:15.641936+0000 UTC [INFO] pydataquery: Sending 2/2 API request
+2025-09-12 13:32:15.649926+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20220911&end-date=20230911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:32:15.651068+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:32:12+0000 UTC
+2025-09-12 13:32:17.212350+0000 UTC [INFO] pydataquery: Received API response in 1.527318 seconds with response code 200
+2025-09-12 13:32:17.214349+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 13:32:17.215349+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 13:32:17.218349+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 13:32:17.223351+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 13:32:17.223351+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 13:32:17.226353+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 13:32:17.227353+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,095 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-3Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 13:32:21.147947+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 13:32:21.149947+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 13:32:21.149947+0000 UTC'
+2025-09-12 13:32:21.151949+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 13:32:21.152994+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-2Y'. Date range: 730 day(s).
+2025-09-12 13:32:21.153947+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-2Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 13:32:21.154948+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 13:32:21.155948+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-2Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 13:32:21.156947+0000 UTC [INFO] pydataquery: Prepared 1 API requests for 3 expressions of 2 year(s) 0 day(s): start_date=20230911, end_date=20250911
+2025-09-12 13:32:21.157947+0000 UTC [INFO] pydataquery: Sending 1/1 API request
+2025-09-12 13:32:21.157947+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230911&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:32:21.158950+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 13:32:21.737101+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.59 seconds. The token expires_at=2025-09-12 15:32:20+0000 UTC
+2025-09-12 13:32:21.737101+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:32:20+0000 UTC
+2025-09-12 13:32:25.566119+0000 UTC [INFO] pydataquery: Received API response in 3.71416 seconds with response code 200
+2025-09-12 13:32:25.574921+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 13:32:25.575933+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 13:32:25.580656+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 13:32:25.580656+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 13:32:25.580656+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 13:32:25.580656+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 13:32:25.595667+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 730 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-2Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 13:43:27.982314+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 13:43:27.982314+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 13:43:27.982314+0000 UTC'
+2025-09-12 13:43:27.982314+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 13:43:27.982314+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-12 13:43:27.982314+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-12 13:43:27.982314+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 13:43:27.982314+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 13:43:27.982314+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 13:43:27.997377+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200911, end_date=20250911
+2025-09-12 13:43:27.997377+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-12 13:43:27.997377+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230912&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:43:27.997377+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 13:43:28.325307+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.33 seconds. The token expires_at=2025-09-12 15:43:27+0000 UTC
+2025-09-12 13:43:28.325307+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:43:27+0000 UTC
+2025-09-12 13:43:29.972956+0000 UTC [INFO] pydataquery: Received API response in 1.525395 seconds with response code 200
+2025-09-12 13:43:29.977097+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-12 13:43:29.979618+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210912&end-date=20230911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:43:29.979618+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:43:27+0000 UTC
+2025-09-12 13:43:31.595481+0000 UTC [INFO] pydataquery: Received API response in 1.543597 seconds with response code 200
+2025-09-12 13:43:31.600391+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-12 13:43:31.602388+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200911&end-date=20210911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 13:43:31.602388+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 15:43:27+0000 UTC
+2025-09-12 13:43:33.885752+0000 UTC [INFO] pydataquery: Received API response in 2.24995 seconds with response code 200
+2025-09-12 13:43:33.885752+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 13:43:33.885752+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 13:43:34.020208+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 13:43:34.025268+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 13:43:34.026058+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 13:43:34.028062+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 13:43:34.029063+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 20:00:28.282416+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 20:00:28.283419+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 20:00:28.283418+0000 UTC'
+2025-09-12 20:00:28.285456+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 20:00:28.286492+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-12 20:00:28.287495+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-12 20:00:28.288495+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 20:00:28.289496+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 20:00:28.290496+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 20:00:28.291979+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200911, end_date=20250911
+2025-09-12 20:00:28.291979+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-12 20:00:28.292991+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230912&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:00:28.293978+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 20:00:28.773595+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.48 seconds. The token expires_at=2025-09-12 22:00:27+0000 UTC
+2025-09-12 20:00:28.774586+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:00:27+0000 UTC
+2025-09-12 20:00:31.427655+0000 UTC [INFO] pydataquery: Received API response in 2.528094 seconds with response code 200
+2025-09-12 20:00:31.427655+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-12 20:00:31.437807+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210912&end-date=20230911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:00:31.439216+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:00:27+0000 UTC
+2025-09-12 20:00:33.555245+0000 UTC [INFO] pydataquery: Received API response in 1.930135 seconds with response code 200
+2025-09-12 20:00:33.555245+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-12 20:00:33.570446+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200911&end-date=20210911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:00:33.570650+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:00:27+0000 UTC
+2025-09-12 20:00:35.020190+0000 UTC [INFO] pydataquery: Received API response in 1.323064 seconds with response code 200
+2025-09-12 20:00:35.020190+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 20:00:35.020190+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 20:00:35.020190+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 20:00:35.036056+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 20:00:35.038750+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 20:00:35.038750+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 20:00:35.038750+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 20:17:30.679192+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 20:17:30.681219+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 20:17:30.681219+0000 UTC'
+2025-09-12 20:17:30.683245+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 20:17:30.684183+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-12 20:17:30.684183+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-12 20:17:30.684183+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 20:17:30.684183+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 20:17:30.688278+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 20:17:30.689279+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200911, end_date=20250911
+2025-09-12 20:17:30.690322+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-12 20:17:30.691492+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230912&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:17:30.691492+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 20:17:31.234349+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.55 seconds. The token expires_at=2025-09-12 22:17:30+0000 UTC
+2025-09-12 20:17:31.242243+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:17:30+0000 UTC
+2025-09-12 20:17:33.253515+0000 UTC [INFO] pydataquery: Received API response in 1.8396 seconds with response code 200
+2025-09-12 20:17:33.253515+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-12 20:17:33.260885+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210912&end-date=20230911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:17:33.261890+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:17:30+0000 UTC
+2025-09-12 20:17:35.345007+0000 UTC [INFO] pydataquery: Received API response in 1.911184 seconds with response code 200
+2025-09-12 20:17:35.345007+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-12 20:17:35.351594+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200911&end-date=20210911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:17:35.352721+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:17:30+0000 UTC
+2025-09-12 20:17:37.048312+0000 UTC [INFO] pydataquery: Received API response in 1.586296 seconds with response code 200
+2025-09-12 20:17:37.048312+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 20:17:37.048312+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 20:17:37.063820+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 20:17:37.070036+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 20:17:37.070036+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 20:17:37.074442+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 20:17:37.074442+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 20:19:19.993803+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 20:19:19.996088+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 20:19:19.995074+0000 UTC'
+2025-09-12 20:19:19.997920+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 20:19:19.997920+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-12 20:19:19.998924+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-12 20:19:19.999923+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 20:19:20.000922+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 20:19:20.001922+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 20:19:20.001922+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200911, end_date=20250911
+2025-09-12 20:19:20.004002+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-12 20:19:20.005118+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230912&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:19:20.005118+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 20:19:20.919774+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.91 seconds. The token expires_at=2025-09-12 22:19:19+0000 UTC
+2025-09-12 20:19:20.919774+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:19:19+0000 UTC
+2025-09-12 20:19:23.359064+0000 UTC [INFO] pydataquery: Received API response in 2.366557 seconds with response code 200
+2025-09-12 20:19:23.361050+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-12 20:19:23.362051+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210912&end-date=20230911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:19:23.362051+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:19:19+0000 UTC
+2025-09-12 20:19:25.735799+0000 UTC [INFO] pydataquery: Received API response in 2.271701 seconds with response code 200
+2025-09-12 20:19:25.735799+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-12 20:19:25.735799+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200911&end-date=20210911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:19:25.735799+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:19:19+0000 UTC
+2025-09-12 20:19:27.241319+0000 UTC [INFO] pydataquery: Received API response in 1.433192 seconds with response code 200
+2025-09-12 20:19:27.242319+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 20:19:27.243320+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 20:19:27.246319+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 20:19:27.252304+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 20:19:27.252304+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 20:19:27.255683+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 20:19:27.257684+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-12 20:37:48.737309+0000 UTC'
+2025-09-12 20:37:48.737309+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-12 20:37:48.737309+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: Execution started
+2025-09-12 20:37:48.737309+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200911, end_date=20250911
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-12 20:37:48.737309+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230912&end-date=20250911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:37:48.737309+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-12 20:37:49.430193+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.68 seconds. The token expires_at=2025-09-12 22:37:48+0000 UTC
+2025-09-12 20:37:49.433187+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:37:48+0000 UTC
+2025-09-12 20:37:51.559891+0000 UTC [INFO] pydataquery: Received API response in 1.934257 seconds with response code 200
+2025-09-12 20:37:51.559891+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-12 20:37:51.559891+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210912&end-date=20230911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:37:51.559891+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:37:48+0000 UTC
+2025-09-12 20:37:54.115256+0000 UTC [INFO] pydataquery: Received API response in 2.411449 seconds with response code 200
+2025-09-12 20:37:54.117260+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-12 20:37:54.118260+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200911&end-date=20210911&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-12 20:37:54.119260+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-12 22:37:48+0000 UTC
+2025-09-12 20:37:55.807972+0000 UTC [INFO] pydataquery: Received API response in 1.554951 seconds with response code 200
+2025-09-12 20:37:55.808976+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-12 20:37:55.810183+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-12 20:37:55.813978+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-12 20:37:55.818166+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-12 20:37:55.819168+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-12 20:37:55.821674+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-12 20:37:55.822674+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 19:39:25.466895+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 19:39:25.469903+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 19:39:25.469903+0000 UTC'
+2025-09-18 19:39:25.471895+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 19:39:25.472492+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 19:39:25.472492+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 19:39:25.473998+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 19:39:25.475003+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 19:39:25.476508+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 19:39:25.476508+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 19:39:25.476508+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 19:39:25.476508+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 19:39:25.476508+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 19:39:26.196556+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.71 seconds. The token expires_at=2025-09-18 21:39:25+0000 UTC
+2025-09-18 19:39:26.196556+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 21:39:25+0000 UTC
+2025-09-18 19:39:28.850237+0000 UTC [INFO] pydataquery: Received API response in 2.532408 seconds with response code 200
+2025-09-18 19:39:28.852200+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 19:39:28.853203+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 19:39:28.853349+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 21:39:25+0000 UTC
+2025-09-18 19:39:31.430954+0000 UTC [INFO] pydataquery: Received API response in 2.464336 seconds with response code 200
+2025-09-18 19:39:31.430954+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 19:39:31.430954+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 19:39:31.430954+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 21:39:25+0000 UTC
+2025-09-18 19:39:33.652640+0000 UTC [INFO] pydataquery: Received API response in 2.16127 seconds with response code 200
+2025-09-18 19:39:33.652640+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 19:39:33.652640+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 19:39:33.661662+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 19:39:33.669638+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 19:39:33.669638+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 19:39:33.669638+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 19:39:33.669638+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 20:31:10.112142+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 20:31:10.117442+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 20:31:10.117441+0000 UTC'
+2025-09-18 20:31:10.120638+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 20:31:10.120638+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 20:31:10.122659+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 20:31:10.122659+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 20:31:10.122659+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 20:31:10.122659+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 20:31:10.122659+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 20:31:10.122659+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 20:31:10.127666+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 20:31:10.127666+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 20:31:10.868561+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.74 seconds. The token expires_at=2025-09-18 22:31:09+0000 UTC
+2025-09-18 20:31:10.868561+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 22:31:09+0000 UTC
+2025-09-18 20:31:13.517655+0000 UTC [INFO] pydataquery: Received API response in 2.517381 seconds with response code 200
+2025-09-18 20:31:13.517655+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 20:31:13.517655+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 20:31:13.517655+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 22:31:09+0000 UTC
+2025-09-18 20:31:16.106038+0000 UTC [INFO] pydataquery: Received API response in 2.45481 seconds with response code 200
+2025-09-18 20:31:16.109118+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 20:31:16.110680+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 20:31:16.112368+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 22:31:09+0000 UTC
+2025-09-18 20:31:18.316475+0000 UTC [INFO] pydataquery: Received API response in 2.140439 seconds with response code 200
+2025-09-18 20:31:18.318483+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 20:31:18.318483+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 20:31:18.323487+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 20:31:18.333654+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 20:31:18.334654+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 20:31:18.336653+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 20:31:18.338155+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 21:46:10.955729+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 21:46:10.957185+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 21:46:10.957185+0000 UTC'
+2025-09-18 21:46:10.959206+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 21:46:10.959206+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 21:46:10.959206+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 21:46:10.959206+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 21:46:10.963091+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 21:46:10.963900+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 21:46:10.963900+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 21:46:10.965403+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 21:46:10.966455+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 21:46:10.967312+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 21:46:11.817095+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.85 seconds. The token expires_at=2025-09-18 23:46:10+0000 UTC
+2025-09-18 21:46:11.817095+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 23:46:10+0000 UTC
+2025-09-18 21:46:14.958668+0000 UTC [INFO] pydataquery: Received API response in 3.011789 seconds with response code 200
+2025-09-18 21:46:14.958668+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 21:46:14.958668+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 21:46:14.958668+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 23:46:10+0000 UTC
+2025-09-18 21:46:18.038316+0000 UTC [INFO] pydataquery: Received API response in 2.948941 seconds with response code 200
+2025-09-18 21:46:18.038316+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 21:46:18.046995+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 21:46:18.046995+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 23:46:10+0000 UTC
+2025-09-18 21:46:21.740587+0000 UTC [INFO] pydataquery: Received API response in 3.567887 seconds with response code 200
+2025-09-18 21:46:21.750673+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 21:46:21.750673+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 21:46:21.750673+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 21:46:21.750673+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 21:46:21.750673+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 21:46:21.750673+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 21:46:21.766236+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 21:59:54.825270+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 21:59:54.830225+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 21:59:54.830225+0000 UTC'
+2025-09-18 21:59:54.832257+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 21:59:54.832257+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 21:59:54.832257+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 21:59:54.832257+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 21:59:54.836558+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 21:59:54.836558+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 21:59:54.836558+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 21:59:54.836558+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 21:59:54.836558+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 21:59:54.836558+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 21:59:55.230626+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.39 seconds. The token expires_at=2025-09-18 23:59:54+0000 UTC
+2025-09-18 21:59:55.230626+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 23:59:54+0000 UTC
+2025-09-18 21:59:57.964439+0000 UTC [INFO] pydataquery: Received API response in 2.534268 seconds with response code 200
+2025-09-18 21:59:57.967464+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 21:59:57.970908+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 21:59:57.970908+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 23:59:54+0000 UTC
+2025-09-18 22:00:00.794612+0000 UTC [INFO] pydataquery: Received API response in 2.634535 seconds with response code 200
+2025-09-18 22:00:00.802616+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 22:00:00.802616+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:00:00.804577+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-18 23:59:54+0000 UTC
+2025-09-18 22:00:02.482239+0000 UTC [INFO] pydataquery: Received API response in 1.614884 seconds with response code 200
+2025-09-18 22:00:02.482239+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 22:00:02.482239+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 22:00:02.489194+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 22:00:02.514267+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 22:00:02.514267+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 22:00:02.519410+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 22:00:02.519410+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 22:07:09.481161+0000 UTC'
+2025-09-18 22:07:09.481161+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 22:07:09.481161+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 22:07:09.481161+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 22:07:09.481161+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:07:09.481161+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 22:07:10.185375+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.69 seconds. The token expires_at=2025-09-19 00:07:09+0000 UTC
+2025-09-18 22:07:10.192490+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:07:09+0000 UTC
+2025-09-18 22:07:14.526020+0000 UTC [INFO] pydataquery: Received API response in 4.214434 seconds with response code 200
+2025-09-18 22:07:14.528020+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 22:07:14.529020+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:07:14.529020+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:07:09+0000 UTC
+2025-09-18 22:07:16.564481+0000 UTC [INFO] pydataquery: Received API response in 1.858072 seconds with response code 200
+2025-09-18 22:07:16.567478+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 22:07:16.568481+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:07:16.568481+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:07:09+0000 UTC
+2025-09-18 22:07:18.275805+0000 UTC [INFO] pydataquery: Received API response in 1.650524 seconds with response code 200
+2025-09-18 22:07:18.277809+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 22:07:18.277809+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 22:07:18.277809+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 22:07:18.292446+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 22:07:18.292446+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 22:07:18.292446+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 22:07:18.299952+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 22:16:56.789763+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 22:16:56.798499+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 22:16:56.798498+0000 UTC'
+2025-09-18 22:16:56.800719+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 22:16:56.800719+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 22:16:56.800719+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 22:16:56.800719+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 22:16:56.800719+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 22:16:56.805223+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 22:16:56.805223+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 22:16:56.805223+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 22:16:56.807807+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:16:56.807807+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 22:17:00.725018+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 3.92 seconds. The token expires_at=2025-09-19 00:16:59+0000 UTC
+2025-09-18 22:17:00.725018+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:16:59+0000 UTC
+2025-09-18 22:17:04.351523+0000 UTC [INFO] pydataquery: Received API response in 3.433913 seconds with response code 200
+2025-09-18 22:17:04.351523+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 22:17:04.351523+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:17:04.351523+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:16:59+0000 UTC
+2025-09-18 22:17:08.199502+0000 UTC [INFO] pydataquery: Received API response in 3.643891 seconds with response code 200
+2025-09-18 22:17:08.202502+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 22:17:08.203494+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:17:08.204493+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:16:59+0000 UTC
+2025-09-18 22:17:09.884442+0000 UTC [INFO] pydataquery: Received API response in 1.552079 seconds with response code 200
+2025-09-18 22:17:09.888313+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 22:17:09.888313+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 22:17:09.898939+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 22:17:09.911989+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 22:17:09.914492+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 22:17:09.914492+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 22:17:09.914492+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
+2025-09-18 22:18:40.849402+0000 UTC [INFO] pydataquery: DataQuery initialized with client_id='jbAIMF2Tkp0JO3sc'
+2025-09-18 22:18:40.852159+0000 UTC [INFO] pydataquery: Set preferred_timezone='UTC'. current_time='2025-09-18 22:18:40.852158+0000 UTC'
+2025-09-18 22:18:40.854827+0000 UTC [DEBUG] pydataquery: Created a job of 3 expression(s)
+2025-09-18 22:18:40.855847+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y'
+2025-09-18 22:18:40.856860+0000 UTC [WARNING] pydataquery: Potential long process time due to date range exceeding two years: 5.0 years.
+2025-09-18 22:18:40.857858+0000 UTC [INFO] pydataquery: DataQuery default attribute `start_date` set to 'TODAY-5Y' (client_id='jbAIMF2Tkp0JO3sc')
+2025-09-18 22:18:40.858858+0000 UTC [INFO] pydataquery: Execution started
+2025-09-18 22:18:40.859858+0000 UTC [DEBUG] pydataquery: Preparing for API request(s) for 3 expression(s). Parameters: filter_value='expression_has_null_value_only', expressions_per_request=20, start_date='TODAY-5Y', end_date='TODAY', data='ALL', nan_treatment='NA_NOTHING', frequency='FREQ_DAY', calendar='CAL_WEEKDAYS'
+2025-09-18 22:18:40.860857+0000 UTC [INFO] pydataquery: Prepared 3 API requests for 3 expressions of 5 year(s) 0 day(s): start_date=20200917, end_date=20250917
+2025-09-18 22:18:40.861859+0000 UTC [INFO] pydataquery: Sending 1/3 API request
+2025-09-18 22:18:40.862859+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20230918&end-date=20250917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:18:40.862859+0000 UTC [INFO] pydataquery: Generating a new OAuth access token for client_id=jbAIMF2Tkp0JO3sc
+2025-09-18 22:18:41.446962+0000 UTC [INFO] pydataquery: Generated an OAuth access token for client_id=jbAIMF2Tkp0JO3sc in 0.59 seconds. The token expires_at=2025-09-19 00:18:40+0000 UTC
+2025-09-18 22:18:41.446962+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:18:40+0000 UTC
+2025-09-18 22:18:43.849112+0000 UTC [INFO] pydataquery: Received API response in 2.268767 seconds with response code 200
+2025-09-18 22:18:43.853625+0000 UTC [INFO] pydataquery: Sending 2/3 API request
+2025-09-18 22:18:43.853625+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20210918&end-date=20230917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:18:43.853625+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:18:40+0000 UTC
+2025-09-18 22:18:45.930417+0000 UTC [INFO] pydataquery: Received API response in 1.898885 seconds with response code 200
+2025-09-18 22:18:45.943309+0000 UTC [INFO] pydataquery: Sending 3/3 API request
+2025-09-18 22:18:45.947454+0000 UTC [DEBUG] pydataquery: GET https://api-developer.jpmorgan.com/research/dataquery-authe/api/v2/expressions/time-series?expressions=DB%28CBN%2CFRF%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CITL%2C10%2CMIDYLD%29&expressions=DB%28CBN%2CDEM%2C10%2CMIDYLD%29&start-date=20200917&end-date=20210917&data=ALL&calendar=CAL_WEEKDAYS&nan-treatment=NA_NOTHING&frequency=FREQ_DAY
+2025-09-18 22:18:45.948348+0000 UTC [DEBUG] pydataquery: Reusing existing token for client_id=jbAIMF2Tkp0JO3sc which expires_at=2025-09-19 00:18:40+0000 UTC
+2025-09-18 22:18:48.401979+0000 UTC [INFO] pydataquery: Received API response in 2.395862 seconds with response code 200
+2025-09-18 22:18:48.401979+0000 UTC [INFO] pydataquery: Processing API responses... This may take a few seconds depending on the size of requests.
+2025-09-18 22:18:48.401979+0000 UTC [DEBUG] pydataquery: Normalizing API response and storing results to the job
+2025-09-18 22:18:48.401979+0000 UTC [DEBUG] pydataquery: Consolidating API responses by expressions
+2025-09-18 22:18:48.415803+0000 UTC [INFO] pydataquery: Retrieved data successfully for 3 expression(s)
+2025-09-18 22:18:48.416922+0000 UTC [DEBUG] pydataquery: Updating the job results
+2025-09-18 22:18:48.419042+0000 UTC [INFO] pydataquery: Execution completed
+2025-09-18 22:18:48.421068+0000 UTC [INFO] pydataquery: Pre-processing: converting 3 expression(s) of 1,825 day(s) values with filter_value='all' to a dataframe by date, ranging from start_date='TODAY-5Y' to end_date='TODAY'. This may take a while depending the size of expressions and date range.
